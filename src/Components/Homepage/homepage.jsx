@@ -204,11 +204,12 @@ class Homepage extends Component {
 
                     </div>
                     <div className="col">
-                        <img
+                        {/* <img
                             style={{ height: "490px" }}
                             src={Events}
                             alt="img2"
-                        />
+                        /> */}
+                        
                     </div>
                 </div>
 
