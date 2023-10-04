@@ -11,7 +11,7 @@ import Footer from "./footer";
 import "../../css/homepage.css";
 import axios from "axios";
 import {  Link, Navigate } from "react-router-dom";
-
+import { Button } from "react-bootstrap";
 class Homepage extends Component {
     state = {
         searchStatus: false,
@@ -180,12 +180,7 @@ class Homepage extends Component {
                            Types of Insurace
                         </h3>
                         <p className="description" style={{ color: "#FFFFFF" }}>
-                            <ul>
-                                <li>Health Insurance</li>
-                                <li>Car Insurance</li>
-                                <li>Death Insurace</li>
-                                
-                            </ul>
+                            
                         </p>
                         <a href="/events">
                             <input
@@ -209,8 +204,36 @@ class Homepage extends Component {
                             src={Events}
                             alt="img2"
                         /> */}
-                        
+                        <div className='rcont'>
+               <div className='tstcard'>
+                  <img src={Events} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Regular Knowledge Assesment(Physics)</p>
+                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <Link to="/student/acadamicscard/feedbackcard/report">
+                     <Button variant="primary" className='rb1'>View report </Button>
+                  </Link>
+
+               </div>
+               <div className='tstcard'>
+                  <img src={Events} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Regular Knowledge Assesment(Physics)</p>
+                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <Link to="/student/acadamicscard/feedbackcard/report">
+                     <Button variant="primary" className='rb1'>View report </Button>
+                  </Link>
+
+               </div>
+               <div className='tstcard'>
+                  <img src={Events} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Regular Knowledge Assesment(English)</p>
+                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <Link to="/student/acadamicscard/feedbackcard/report">
+                     <Button variant="primary" className='rb1'>View report </Button>
+                  </Link>
+
+                </div>
                     </div>
+                </div>
                 </div>
 
                 <div
