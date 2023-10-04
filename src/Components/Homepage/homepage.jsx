@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Navbar from "./navbar";
-import InfoScrapMain from "../../images/InfoScrapMain.svg";
-import Question from "../../images/Questions.svg";
-import Interaction from "../../images/interaction.svg";
+import TopImg from "../../images/AutoInsure.png";
+import Middle_Img from "../../images/Middle_Img.jpg";
+import Interaction from "../../images/Interaction.jpg";
 import RecentInfo from "../../images/recentInfo.svg";
 import Events from "../../images/event.svg";
 import InstituteSignup from "../../images/InstituteSignup.svg";
@@ -101,17 +101,17 @@ class Homepage extends Component {
                 <div className="row g-3">
                     <div className=" row d-flex justify-content-center align-items-center">
                         <div className="col">
-                            <h1 className="heading">InfoScrap</h1>
+                            <h1 className="heading">AutoInsure</h1>
                             <h3 className="tagline">
-                                Your one stop site for gathering all the
-                                knowledege and to know about how things are
-                                running across various institutions.
+                            Step into a World of Limitless Coverage Possibilities: Your Metaverse Insurance Hub! Get ready to embark on a journey
+                             like no other, where your insurance experience is redefined. Unleash your imagination, explore our metaverse,
+                              and sculpt the perfect insurance for your unique needs. Welcome to the revolution in coverage your adventure starts here!
                             </h3>
                         </div>
                         <div className="col">
                             <img
-                                style={{ height: "550px" }}
-                                src={InfoScrapMain}
+                                style={{ height: "450px" ,margin:"50px"}}
+                                src={TopImg}
                                 alt="abc"
                             />
                         </div>
@@ -128,16 +128,18 @@ class Homepage extends Component {
                 >
                     <div className="col-6">
                         <img
-                            style={{ height: "550px" }}
-                            src={Question}
+                            style={{ height: "550px",width:"550px",margin:"20px"}}
+                            src={Middle_Img}
                             alt="img2" 
                         />
                     </div>
                     <div className="col-6">
-                        <h3 className="title">Don't know what you want?</h3>
+                        <h3 className="title">About insurance?</h3>
                         <p className="description">
-                            Just enter the words which you want to view details
-                            upon?
+                        Insurance is the vigilant guardian of financial peace of mind,
+                        a contractual promise that transforms uncertainty into stability,
+                        and a shield that embraces you in times of unexpected adversity,
+                        offering a dependable refuge for your assets and aspirations.
                         </p>
                         <div style={{display: "flex", position:"relative"}}>
                         <input
@@ -155,8 +157,8 @@ class Homepage extends Component {
                             style={{
                                 margin: "20px",
                                 marginLeft: "50px",
-                                backgroundColor: "#FC5286",
-                                borderColor: "#FC5286",
+                                backgroundColor: "#01a89e",
+                                borderColor: "#01a89e",
                             }}
                             onClick = {this.searchQuery}
                             type="submit"
@@ -168,30 +170,35 @@ class Homepage extends Component {
                 <div
                     className="row d-flex justify-content-center align-items-center"
                     style={{
-                        background: "#33325A",
+                        background: "#01a89e",
                         paddingLeft: "5%",
                         paddingRight: "5%"
                     }}
                 >
                     <div className="col">
                         <h3 className="title" style={{ color: "#F0FFFF" }}>
-                            Get ready to Learn
+                           Types of Insurace
                         </h3>
                         <p className="description" style={{ color: "#FFFFFF" }}>
-                            Mark your clock to attend new upcoming training sessions and gain knowledege.
+                            <ul>
+                                <li>Health Insurance</li>
+                                <li>Car Insurance</li>
+                                <li>Death Insurace</li>
+                                
+                            </ul>
                         </p>
                         <a href="/events">
                             <input
                                 class="btn btn-primary"
                                 style={{
                                     margin: "20px",
-                                    marginLeft: "50px",
-                                    backgroundColor: "#FC5286",
-                                    borderColor: "#FC5286",
+                                    marginLeft: "90px",
+                                    backgroundColor: "#114342",
+                                    borderColor: "#01a89e",
 
                                 }}
                                 type="submit"
-                                value="Explore events"
+                                value="Insurance"
                             />
                         </a>
 
@@ -221,17 +228,17 @@ class Homepage extends Component {
                         />
                     </div>
                     <div className="col">
-                        <h3 className="title">Interaction Portal</h3>
+                        <h3 className="title">Metaverse Interaction Portal</h3>
                         <p className="description">
-                            A common place for every users to interact with each other and share their knowledege regarding labour related information.
+                            A common place for every users to interact with the Insurance agent to clarify their doubts and Enroll in the insurace policy or for the claim.
                         </p>
                         <input
                             class="btn btn-primary"
                             style={{
                                 margin: "20px",
                                 marginLeft: "50px",
-                                backgroundColor: "#FC5286",
-                                borderColor: "#FC5286",
+                                backgroundColor: "#01a89e",
+                                borderColor: "#01a89e",
                             }}
                             type="submit"
                             value="Interact"

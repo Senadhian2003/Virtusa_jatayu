@@ -24,6 +24,7 @@
     width: 1.4em;
     transition-property: transform;
     transition-duration: 1s;
+    
 }
 
 .container-fluid ul li a:hover
