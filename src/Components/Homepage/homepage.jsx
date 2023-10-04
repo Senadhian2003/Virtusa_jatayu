@@ -3,10 +3,10 @@ import Navbar from "./navbar";
 import TopImg from "../../images/AutoInsure.png";
 import Middle_Img from "../../images/Middle_Img.jpg";
 import Interaction from "../../images/Interaction.jpg";
-import RecentInfo from "../../images/recentInfo.svg";
+import disability from "../../images/dis.jpg";
+import carInsure from "../../images/car-insurance-and-money-vector.jpg";
+import health from "../../images/Health.jpg";
 import Events from "../../images/event.svg";
-import InstituteSignup from "../../images/InstituteSignup.svg";
-import Suggest from "../../images/suggest.svg";
 import Footer from "./footer";
 import "../../css/homepage.css";
 import axios from "axios";
@@ -168,37 +168,22 @@ class Homepage extends Component {
                 </div>
 
                 <div
-                    className="row d-flex justify-content-center align-items-center"
+                    
                     style={{
                         background: "#01a89e",
                         paddingLeft: "5%",
                         paddingRight: "5%"
                     }}
                 >
-                    <div className="col">
-                        <h3 className="title" style={{ color: "#F0FFFF" }}>
+                    <div>
+                        <h3 className="title" style={{ color: "#F0FFFF",
+                   paddingTop:"5%",textAlign:"center"}}>
                            Types of Insurace
                         </h3>
-                        <p className="description" style={{ color: "#FFFFFF" }}>
-                            
-                        </p>
-                        <a href="/events">
-                            <input
-                                class="btn btn-primary"
-                                style={{
-                                    margin: "20px",
-                                    marginLeft: "90px",
-                                    backgroundColor: "#114342",
-                                    borderColor: "#01a89e",
-
-                                }}
-                                type="submit"
-                                value="Insurance"
-                            />
-                        </a>
+                  
 
                     </div>
-                    <div className="col">
+                    <div >
                         {/* <img
                             style={{ height: "490px" }}
                             src={Events}
@@ -206,27 +191,31 @@ class Homepage extends Component {
                         /> */}
                         <div className='rcont'>
                <div className='tstcard'>
-                  <img src={Events} alt="noimg" className='rimg1' />
-                  <p className='rp1'>Regular Knowledge Assesment(Physics)</p>
-                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <img src={health} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Health Insurance</p>
+                  <p className='rp2'>Health insurance provides financial protection and access to medical services,
+                   helping individuals cover the costs of healthcare expenses</p>
                   <Link to="/student/acadamicscard/feedbackcard/report">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
 
                </div>
                <div className='tstcard'>
-                  <img src={Events} alt="noimg" className='rimg1' />
-                  <p className='rp1'>Regular Knowledge Assesment(Physics)</p>
-                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <img src={carInsure} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Car Insurance</p>
+                  <p className='rp2'>Car insurance offers financial protection in case of accidents, theft, or damage to your vehicle,
+                  ensuring peace of mind and compliance with legal requirements.</p>
                   <Link to="/student/acadamicscard/feedbackcard/report">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
 
                </div>
                <div className='tstcard'>
-                  <img src={Events} alt="noimg" className='rimg1' />
-                  <p className='rp1'>Regular Knowledge Assesment(English)</p>
-                  <p className='rp2'>8-Aug-2022 09:00 am to 10:00 am</p>
+                  <img src={disability} alt="noimg" className='rimg1' />
+                  <p className='rp1'>Disability Insurance</p>
+                  <p className='rp2'>Disability insurance provides financial protection by replacing a 
+                  portion of your income if you become unable to work due to a disabling injury or illness.
+                  </p>
                   <Link to="/student/acadamicscard/feedbackcard/report">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
@@ -268,133 +257,6 @@ class Homepage extends Component {
                             value="Interact"
                         />
                     </div>
-                </div>
-
-                <div
-                    className="row d-flex justify-content-center align-items-center"
-                    style={{
-                        borderTop: "1px solid grey",
-                        paddingLeft: "5%",
-                        paddingRight: "5%"
-                    }}
-                >
-                    <div className="col">
-                        <h3 className="title">
-                            Get recent information
-                        </h3>
-                        <p className="description">
-                            Get updated information on recent news and media gallery.
-                        </p>
-                        <input
-                            class="btn btn-primary"
-                            style={{
-                                margin: "20px",
-                                marginLeft: "50px",
-                                backgroundColor: "#FC5286",
-                                borderColor: "#FC5286",
-                            }}
-                            type="submit"
-                            value="Get news"
-                        />
-                    </div>
-                    <div className="col">
-                        <img
-                            style={{ height: "550px" }}
-                            src={RecentInfo}
-                            alt="img2"
-                        />
-
-                    </div>
-
-                </div>
-
-                <div
-                    className="row d-flex justify-content-center align-items-center"
-                    style={{
-                        borderTop: "1px solid grey",
-                        paddingLeft: "5%",
-                        paddingRight: "5%"
-                    }}
-                >
-                    <div className="col">
-                        <img
-                            style={{ height: "550px" }}
-                            src={InstituteSignup}
-                            alt="img2"
-                        />
-                    </div>
-                    <div className="col">
-                        <h3 className="title">Register your Organization</h3>
-                        <p className="description">
-                            Want more people to know about events conducted by your Institute? <br /><br />
-                            Register in our portal and release dates and venue of events in our website
-                        </p>
-                        <a href="/register">
-                        <input
-                            class="btn btn-primary"
-                            style={{
-                                margin: "20px",
-                                marginLeft: "50px",
-                                backgroundColor: "#FC5286",
-                                borderColor: "#FC5286",
-                            }}
-                            type="submit"
-                            value="Register"
-                        />
-                        </a>
-                    </div>
-                </div>
-                <div
-                    className="row d-flex justify-content-center align-items-center"
-                    style={{
-                        borderTop: "1px solid grey",
-                        paddingLeft: "5%",
-                        paddingRight: "5%"
-                    }}
-                >
-                    <div className="col">
-                        <h3 className="title">
-                            Couldnt find what you are looking for?
-                        </h3>
-                        <p className="description d1">
-                            Suggest institutions what you need.
-                        </p>
-                        <select class="form-select" value="def" id="title" aria-label="Default select example" style={{ width: "400px", marginLeft: "70px",marginTop:"20px" }}>
-                            <option selected>Event</option>
-                            <option value="1">Capacity Building Programme on Labour Codes and Rules</option>
-                            <option value="2">Training Programme on Gender and Labour Issues</option>
-                            <option value="3">Training Programme on Fundamentals of Labour Codes</option>
-                            <option>Other...</option>
-                        </select>
-                        <div className="sh"></div>
-
-                        <textarea name="" id="description" placeholder="Description..." value="d" cols="30" rows="6" style={{ width: "400px", marginLeft: "70px",marginTop:"20px" }}></textarea>
-                        <br />
-                        <a href="explore/suggest_form">
-                            <input
-                                class="btn btn-primary"
-                                style={{
-                                    margin: "20px",
-                                    marginLeft: "70px",
-                                    backgroundColor: "#FC5286",
-                                    borderColor: "#FC5286",
-                                }}
-                                onClick={this.suggest}
-                                type="submit"
-                                value="Suggest"
-                            />
-                        </a>
-
-                    </div>
-                    <div className="col">
-                        <img
-                            style={{ height: "550px" }}
-                            src={Suggest}
-                            alt="img2"
-                        />
-
-                    </div>
-
                 </div>
 
                 <Footer />

@@ -5,8 +5,10 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <footer className="page-footer font-small unique-color-dark">
-                    <div className="container text-center text-md-left mt-5">
+                <footer className="page-footer font-small unique-color-dark" style={{backgroundColor:"#dedede"}}>
+                    <div className="container text-center text-md-left mt-5 "style={{paddingTop:"5%"}}>
+                  
+                                   
                         <div className="row mt-3">
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <h6 className="text-uppercase font-weight-bold">
