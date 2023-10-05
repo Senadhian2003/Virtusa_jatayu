@@ -6,12 +6,13 @@ import Interaction from "../../images/Interaction.jpg";
 import disability from "../../images/dis.jpg";
 import carInsure from "../../images/car-insurance-and-money-vector.jpg";
 import health from "../../images/Health.jpg";
-import Events from "../../images/event.svg";
+import Health_insure from "./health_insurance";
 import Footer from "./footer";
 import "../../css/homepage.css";
 import axios from "axios";
 import {  Link, Navigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
+
 class Homepage extends Component {
     state = {
         searchStatus: false,
@@ -195,10 +196,9 @@ class Homepage extends Component {
                   <p className='rp1'>Health Insurance</p>
                   <p className='rp2'>Health insurance provides financial protection and access to medical services,
                    helping individuals cover the costs of healthcare expenses</p>
-                  <Link to="/student/acadamicscard/feedbackcard/report">
-                     <Button variant="primary" className='rb1'>View report </Button>
+                  <Link to="/Health_insure">
+                     <Button variant="primary" className='rb1'> Apply </Button>
                   </Link>
-
                </div>
                <div className='tstcard'>
                   <img src={carInsure} alt="noimg" className='rimg1' />
@@ -206,7 +206,7 @@ class Homepage extends Component {
                   <p className='rp2'>Car insurance offers financial protection in case of accidents, theft, or damage to your vehicle,
                   ensuring peace of mind and compliance with legal requirements.</p>
                   <Link to="/student/acadamicscard/feedbackcard/report">
-                     <Button variant="primary" className='rb1'>View report </Button>
+                     <Button variant="primary" className='rb1'> Apply </Button>
                   </Link>
 
                </div>
@@ -217,7 +217,7 @@ class Homepage extends Component {
                   portion of your income if you become unable to work due to a disabling injury or illness.
                   </p>
                   <Link to="/student/acadamicscard/feedbackcard/report">
-                     <Button variant="primary" className='rb1'>View report </Button>
+                     <Button variant="primary" className='rb1'> Apply </Button>
                   </Link>
 
                 </div>

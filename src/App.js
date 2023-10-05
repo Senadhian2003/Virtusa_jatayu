@@ -12,6 +12,7 @@ import ArticleInfo from "./Components/Explore/articleInfo";
 import SuggestForm from "./Components/Explore/suggestion";
 import OrganizationRegister from "./Components/Homepage/organizationRegister";
 import EventDetail from "./Components/Explore/event-detail";
+import Health_insure from "./Components/Homepage/health_insurance";
 
 function App() {
     return (
@@ -36,7 +37,9 @@ function App() {
                     <Route
                         path="/explore/profile/profile"
                         element={<Profile />}
+                        
                     />
+                    
                     <Route
                         path="/articles"
                         element={<Articles />}
@@ -58,6 +61,10 @@ function App() {
                         path="/searchQuery"
                         element={<EventDetail />}
                     />
+                    <Route
+                        path="/Health_insure"
+                        element={<Health_insure />}
+                        />
 
                 </Routes>
             </Router>
