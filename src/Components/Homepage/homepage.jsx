@@ -195,7 +195,7 @@ class Homepage extends Component {
                   <p className='rp1'>Health Insurance</p>
                   <p className='rp2'>Health insurance provides financial protection and access to medical services,
                    helping individuals cover the costs of healthcare expenses</p>
-                  <Link to="/student/acadamicscard/feedbackcard/report">
+                  <Link to="/form1">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
 
@@ -205,7 +205,7 @@ class Homepage extends Component {
                   <p className='rp1'>Car Insurance</p>
                   <p className='rp2'>Car insurance offers financial protection in case of accidents, theft, or damage to your vehicle,
                   ensuring peace of mind and compliance with legal requirements.</p>
-                  <Link to="/student/acadamicscard/feedbackcard/report">
+                  <Link to="/form1">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
 
@@ -216,7 +216,7 @@ class Homepage extends Component {
                   <p className='rp2'>Disability insurance provides financial protection by replacing a 
                   portion of your income if you become unable to work due to a disabling injury or illness.
                   </p>
-                  <Link to="/student/acadamicscard/feedbackcard/report">
+                  <Link to="/form1">
                      <Button variant="primary" className='rb1'>View report </Button>
                   </Link>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
 import "./login.css"
@@ -8,8 +8,6 @@ function Signup() {
   const [role,srole]=useState("");
   const [name,sname]=useState("");
   const [password,spassword]=useState("");
- 
-  
   function handlesubmit(e){
     e.preventDefault();
   }
