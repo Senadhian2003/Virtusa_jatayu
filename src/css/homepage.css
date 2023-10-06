@@ -239,8 +239,9 @@ h1{
     font-family: sans-serif;
 }
 .rb1{
-    margin-left: 35%;
+    margin-left: 40%;
     height: 43px;
+    background-color: #01a89e;
 }
 .rcont{
     display: flex;
